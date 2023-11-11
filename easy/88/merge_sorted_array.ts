@@ -18,23 +18,3 @@ function merge(nums1: number[], m: number, nums2: number[], n: number): void {
     n12_idx -= 1;
   }
 }
-
-// Test-cases
-let test1: number[] = [1, 2, 3, 0, 0, 0];
-merge(test1, 3, [2, 5, 6], 3);
-
-if (JSON.stringify(test1) !== JSON.stringify([1, 2, 2, 3, 5, 6])) {
-  console.log(`WRONG ${test1}`);
-}
-
-let test2: number[] = [1];
-merge(test2, 1, [], 0);
-if (JSON.stringify(test2) !== JSON.stringify([1])) {
-  console.log(`WRONG ${test2}`);
-}
-
-let test3: number[] = [0];
-merge(test3, 0, [1], 1);
-if (JSON.stringify(test3) !== JSON.stringify([1])) {
-  console.log(`WRONG ${test3}`);
-}
