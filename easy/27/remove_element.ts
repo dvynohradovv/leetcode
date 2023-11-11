@@ -17,11 +17,3 @@ function removeElement(nums: number[], val: number): number {
 
   return qty - 1;
 }
-
-let nums: number[] = [0, 1, 2, 2, 3, 0, 4, 2],
-  val: number = 2;
-
-let qty: number = removeElement(nums, val);
-
-console.log("Nums: " + nums);
-console.log("QTY: " + qty);
