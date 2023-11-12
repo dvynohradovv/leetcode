@@ -3,3 +3,6 @@ node_modules
 
 # Type Script
 *.js
+
+# VS Code
+.vscode
